@@ -1,3 +1,9 @@
+:root{
+   --main-color : steelblue;
+   --border-measure: 1px solid black;
+   --width-image-measure: 150px;
+   --height-image-measure: auto;
+}
 main{
     max-width: 850px;
 }
@@ -18,9 +24,9 @@ h1{
 }
 
 main img{
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
+    width: var(--width-image-measure);
+    height: var(--height-image-measure);
+    border: var(--border-measure);
     padding: 2px;
     box-shadow: 0 0 20px grey;
 }
@@ -39,13 +45,13 @@ aside{
     text-align: center;
 }
 aside img{
-    width: 150px;
-    height:auto;
+    width: var(--width-image-measure);
+    height: var(--height-image-measure);
 }
 
 footer{
     margin-top: 15px;
-    border-top: 1px solid black;
+    border-top: var(--border-measure);
     text-align: center;
 }
 
