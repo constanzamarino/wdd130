@@ -9,7 +9,7 @@ main{
 }
 
 nav {
-    background-color: steelblue;
+    background-color: var(--main-color);
     padding: 10px;
 }
 
@@ -20,7 +20,7 @@ nav a{
 }
 
 h1{
-    color : steelblue ;
+    color : var(--main-color) ;
 }
 
 main img{
