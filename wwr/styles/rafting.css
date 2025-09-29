@@ -1,9 +1,9 @@
 :root{
-    --first-color: rgb(21, 114, 21);
-    --heading-font-color: rgb(15, 15, 122);
+    --first-color: rgba(17, 62, 114, 0.822);
+    --heading-font-color: white;
     --second-color: black ;
-    --body-font: "Times New Roman", "serif" ;
-    --heading-font: "Garamond", "Helvetica" ;
+    --body-font: "Times New Roman", serif;
+    --heading-font: "Cooper Black", cursive;
 }
 
 *{
@@ -18,18 +18,22 @@ body{
 }
 
 header, main, footer{
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
 }
+
 
 h1, h2{
     font-family: var(--heading-font);
     color: var(--heading-font-color);
+    background-color: var(--first-color);
+    text-align: center; 
+    padding: 10px;
 }
 
 nav, p, section, article{
-    margin: 15px;
-    padding: 7.5px;
+    margin: 20px;
+    padding: 10px;
 }
 
 .socialmedia a {
@@ -52,19 +56,23 @@ h1{
     position: absolute;
     top: 20px;
     left: 50%;
-    width: 100%;
-    padding: 15px;
-    text-align: center;
-    opacity: 0.5;
+    transform: translateX(-50%);
     background-color: var(--first-color);
-    color: var(--second-color);
+    color: var(--heading-font-color);
+    padding: 15px 25px;
+    border-radius: 5px;
 }
-
 article{
     position: absolute;
+    margin-top: -150px;
+    background-color: var(--first-color);
+    color: var(--heading-font-color);
 }
 
 .hero article img{
     float: right;
-    width: 330px;
+    margin-top: 5px;
+    width: 150px;  
+    opacity: 1; 
+
 }
