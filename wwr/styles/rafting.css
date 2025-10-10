@@ -42,7 +42,6 @@ header{
     justify-content: center;
     align-items: center;
     padding: 10px;
-    width: 115px;
 }
 
 .logo img{
@@ -121,7 +120,8 @@ nav li a{
 .socialmedia{
     display:flex;
     gap: 10px;
-    
+    margin-left: auto;
+    align-items: center;
 
 }
 .socialmedia img{
@@ -184,6 +184,12 @@ article{
     
 }
 
+.history-text img{
+    border-radius: var(--border);
+    width: 200px;
+    margin-top: 0.2rem;
+}
+
 .hero article img{
     float: right;
     margin-top: 5px;
@@ -222,7 +228,7 @@ article{
     width: 200px;
     height: 150px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: var(--border);
 }
 
 .adventure-images figcaption{
@@ -236,6 +242,7 @@ footer{
     color: white;
     font-weight: bold;
     padding: 0.5rem 1rem;
+    border-radius: 3px;
     display: flex;
     justify-content: space-between;
     align-items:center;
@@ -244,6 +251,8 @@ footer{
 
 
 .footer-text {
-    flex: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
 }
