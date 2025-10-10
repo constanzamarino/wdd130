@@ -4,6 +4,8 @@
     --second-color: black ;
     --body-font: "Times New Roman", serif;
     --heading-font: "Cooper Black", cursive;
+    --padding-measure: 5px;
+    --border: 6px;
 }
 
 *{
@@ -19,37 +21,40 @@ body{
 
 header, main, footer{
     width: 100%;
+    padding: var(--padding-measure);
     margin: 0 auto;
 }
 
+header{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color: var(--first-color);
+    border-radius: 2px;
+    padding: var(--padding-measure);
+    gap: 20px;
+    
+}
+
+.logo{
+    justify-self: start;
+    padding: 10px;
+}
+
+.logo img{
+    height: 60px;
+    width: auto;
+    display: block;
+}
 
 h1, h2{
     font-family: var(--heading-font);
     color: var(--heading-font-color);
     background-color: var(--first-color);
     text-align: center; 
-    padding: 10px;
-}
-
-nav, p, section, article{
-    margin: 20px;
-    padding: 10px;
-}
-
-.socialmedia a {
-
-    text-decoration: none;
-
-}
-
-.hero{
-    position: relative;
-}
-
-.hero img{
-    display: block;
-    width: 100%;
-    height: auto;
+    padding: var(--padding-measure);
+    border-radius: var(--border);
+    
 }
 
 h1{
@@ -60,13 +65,121 @@ h1{
     background-color: var(--first-color);
     color: var(--heading-font-color);
     padding: 15px 25px;
-    border-radius: 5px;
+    border-radius: var(--border);
 }
+
+
+nav, p, section, article{
+    margin: 20px;
+    padding: var(--padding-measure);
+}
+
+nav{
+    justify-self: center;
+    display:flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0; 
+    margin: 0;
+    justify-content: center;
+}
+
+nav li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 10px 15px;
+}
+
+.logo img{
+    height: 60px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+.socialmedia{
+    display:flex;
+    gap: 10px;
+    
+
+}
+.socialmedia img{
+    height: 40px;
+    width: auto;
+
+}
+
+.hero{
+    position: relative;
+    border-radius: var(--border);
+
+}
+
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--border);
+}
+
 article{
     position: absolute;
-    margin-top: -150px;
+    margin-top: -440px;
     background-color: var(--first-color);
     color: var(--heading-font-color);
+    border-radius: var(--border);
+    
+}
+
+.history{
+    background-color: var(--first-color);
+    color: white;
+    padding: 0.5rem 0.3rem;
+    margin-bottom: 1rem;
+    border-radius: var(--border);
+
+}
+
+.history h2{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.history-title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.history-text{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.history-text p{
+    flex: 1;
+    
 }
 
 .hero article img{
@@ -75,4 +188,60 @@ article{
     width: 150px;  
     opacity: 1; 
 
+}
+
+.adventure-section{
+    background-color: var(--first-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: var(--border);
+
+}
+
+.adventure-images{
+    display:flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.adventure-images figure{
+    flex: 1 1 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.4rem;
+    max-width: 200px;
+}
+
+.adventure-images img{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.adventure-images figcaption{
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+footer{
+    position: relative;
+    background-color: var(--first-color);
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+
+}
+
+
+.footer-text {
+    flex: 1;
+    text-align: center;
 }
