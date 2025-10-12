@@ -16,26 +16,37 @@
         <form>
             <fieldset>
                 <legend>Contact Information</legend>
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname"> <br> <br>
-                <label for="useremail">Email</label>
-                <input type="email" id="useremail" name="useremail"><br>
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname"> <br> <br>
+                </div>
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail"><br>
+                </div>
             </fieldset>
             <fieldset>
                 <legend>Questions</legend>
-                <label for="browser">What is your favorite browser?</label>
-                <select id="browser" name="browser">
-                    <option value="chrome">Chrome</option>
-                    <option value="brave">Brave</option>
-                    <option value="firefox">Firefox</option>
-                    <option value="opera">Opera</option>
-                    <option value="other">Other browser</option>
-                </select> <br><br>
-                <label for="pet">Do you have a household pet?</label>
-                <input type="checkbox" id="pet" name="pet"> <br> <br>
-                <label for="feedback">List the places you have lived</label>
-                <textarea id="feedback" name="feedback" rows="4"
-                    placeholder="Paris France, Miami Florida, Buenos Aires Argentina"></textarea><br>
+                <div class="column1">
+                    <label for="browser">What is your favorite browser?</label>
+                    <select id="browser" name="browser">
+                        <option value="select">Select an option</option>
+                        <option value="chrome">Chrome</option>
+                        <option value="brave">Brave</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="opera">Opera</option>
+                        <option value="other">Other browser</option>
+                    </select> <br><br>
+                </div>
+                <div class="column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet"> <br> <br>
+                </div>
+                <div class="column1">
+                    <label for="feedback">List the places you have lived</label>
+                    <textarea id="feedback" name="feedback" rows="4"
+                        placeholder="Paris France, Miami Florida, Buenos Aires Argentina"></textarea><br>
+                </div>
             </fieldset>
             <button type="submit">Submit Poll</label>
         </form>
